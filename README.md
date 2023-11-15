@@ -1,3 +1,3 @@
 # Stat386Project
 
-This is Sam Wise and Matthew Ng Project on NBA Player Performance from regular to postseason.
+This is Sam Wise and Matthew Ng's Project on NBA Player Performance comparing regular to postseason.
