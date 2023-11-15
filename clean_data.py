@@ -32,3 +32,9 @@ playoff22_23.head()
 columns_to_drop = ["Unnamed: 19", "Unnamed: 24", "Player-additional", "Rk"]
 
 playoff22_23.drop(columns=columns_to_drop, axis=1, inplace=True)
+
+#Write clean data to new csv 
+
+reg22_23.to_csv("clean_reg22_23", index = False)
+
+playoff22_23.to_csv("clean_playoff22_23", index = False)
