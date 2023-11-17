@@ -29,3 +29,5 @@ playoff22_23.drop(columns=columns_to_drop, axis=1, inplace=True)
 
 reg22_23.to_csv("clean_reg22_23.csv", index = False)
 playoff22_23.to_csv("clean_playoff22_23.csv", index = False)
+
+
