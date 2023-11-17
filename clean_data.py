@@ -31,3 +31,5 @@ reg22_23.to_csv("clean_reg22_23.csv", index = False)
 playoff22_23.to_csv("clean_playoff22_23.csv", index = False)
 
 
+# Read in RAPTOR Dataframe
+# Link: https://github.com/fivethirtyeight/data/blob/master/nba-raptor/modern_RAPTOR_by_team.csv
