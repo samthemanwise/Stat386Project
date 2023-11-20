@@ -13,6 +13,8 @@ reg21_22.drop(index = 0, inplace = True)
 columns_to_drop = ["Unnamed: 19", "Unnamed: 24", "Player-additional", "Rk"]
 reg21_22.drop(columns=columns_to_drop, axis=1, inplace=True)
 
+reg21_22 = reg21_22[reg21_22["Tm"] != "TOT"]
+
 # Load in 2022-2023 Playoff Data
 # Link: https://www.basketball-reference.com/playoffs/NBA_2022_advanced.html
 
@@ -27,8 +29,8 @@ playoff21_22.drop(columns=columns_to_drop, axis=1, inplace=True)
 
 #Write clean data to new csv 
 
-reg21_22.to_csv("clean_reg22_23.csv", index = False)
-playoff21_22.to_csv("clean_playoff22_23.csv", index = False)
+reg21_22.to_csv("clean_reg21_22.csv", index = False)
+playoff21_22.to_csv("clean_playoff21_22.csv", index = False)
 
 
 # Read in RAPTOR Dataframe
