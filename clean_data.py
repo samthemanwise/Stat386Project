@@ -1,4 +1,5 @@
 import pandas as pd
+from unidecode import unidecode
 
 # Load in 2022-2023 Regular Season Data
 # Link: https://www.basketball-reference.com/leagues/NBA_2022_advanced.html
@@ -26,6 +27,9 @@ playoff21_22 = pd.read_csv("2021-2022playoff.csv")
 
 columns_to_drop = ["Unnamed: 19", "Unnamed: 24", "Player-additional", "Rk"]
 playoff21_22.drop(columns=columns_to_drop, axis=1, inplace=True)
+
+reg21_22['Player'] = reg21_22['Player'].apply(unidecode)
+playoff21_22['Player'] = playoff21_22['Player'].apply(unidecode)
 
 #Write clean data to new csv 
 
