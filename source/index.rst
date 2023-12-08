@@ -1,10 +1,7 @@
-.. Sphinx For Final Project documentation master file, created by
-   sphinx-quickstart on Tue Dec  5 15:34:19 2023.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. Your Project Documentation
 
-Welcome to Sphinx For Matt Ng and Sam Wise's Final Project documentation!
-====================================================
+Welcome to Matt Ng and Sam Wise's Final Project Documentation
+=======================================
 
 .. toctree::
    :maxdepth: 2
@@ -12,6 +9,8 @@ Welcome to Sphinx For Matt Ng and Sam Wise's Final Project documentation!
 
    installation
    cleandata
+   mymodule
+   ...
 
 Indices and tables
 ==================
