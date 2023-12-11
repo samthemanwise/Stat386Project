@@ -12,6 +12,8 @@ setup(
         'pandas',
         'scikit-learn',
         'matplotlib',
-        'seaborn'
+        'seaborn',
+        'stats',
+        'statsmodels.api'
     ], 
 ) 

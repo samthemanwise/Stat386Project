@@ -1,33 +1,35 @@
 import pandas as pd
 
-# Load in 2022-2023 Regular Season Data
-# Link: https://www.basketball-reference.com/leagues/NBA_2022_advanced.html
+def clean_data(csv1, csv2):
 
-# Read the CSV file into a DataFrame
+    # Load in 2022-2023 Regular Season Data
+    # Link: https://www.basketball-reference.com/leagues/NBA_2022_advanced.html
 
-reg21_22 = pd.read_csv("2021-2022reg.csv")
+    # Read the CSV file into a DataFrame
 
-# Clean Data
+    reg21_22 = pd.read_csv(csv1)
 
-reg21_22.drop(index = 0, inplace = True)
-columns_to_drop = ["Unnamed: 19", "Unnamed: 24", "Player-additional", "Rk"]
-reg21_22.drop(columns=columns_to_drop, axis=1, inplace=True)
+    # Clean Data
 
-reg21_22 = reg21_22[reg21_22["Tm"] != "TOT"]
+    reg21_22.drop(index = 0, inplace = True)
+    columns_to_drop = ["Unnamed: 19", "Unnamed: 24", "Player-additional", "Rk"]
+    reg21_22.drop(columns=columns_to_drop, axis=1, inplace=True)
 
-# Load in 2022-2023 Playoff Data
-# Link: https://www.basketball-reference.com/playoffs/NBA_2022_advanced.html
+    reg21_22 = reg21_22[reg21_22["Tm"] != "TOT"]
 
-# Read the CSV file into a DataFrame
+    # Load in 2022-2023 Playoff Data
+    # Link: https://www.basketball-reference.com/playoffs/NBA_2022_advanced.html
 
-playoff21_22 = pd.read_csv("2021-2022playoff.csv")
+    # Read the CSV file into a DataFrame
 
-# Clean Data
+    playoff21_22 = pd.read_csv(csv2)
 
-columns_to_drop = ["Unnamed: 19", "Unnamed: 24", "Player-additional", "Rk"]
-playoff21_22.drop(columns=columns_to_drop, axis=1, inplace=True)
+    # Clean Data
 
-#Write clean data to new csv 
+    columns_to_drop = ["Unnamed: 19", "Unnamed: 24", "Player-additional", "Rk"]
+    playoff21_22.drop(columns=columns_to_drop, axis=1, inplace=True)
 
-reg21_22.to_csv("clean_reg21_22.csv", index = False)
-playoff21_22.to_csv("clean_playoff21_22.csv", index = False)
+    # Write clean data to new csv 
+
+    reg21_22.to_csv("clean_reg21_22.csv", index = False)
+    playoff21_22.to_csv("clean_playoff21_22.csv", index = False)
