@@ -69,3 +69,5 @@ final_post_norm['performance_score'] = final_post_norm[metrics].sum(axis=1)
 # Filter out duplicates for players with two 'RS' rows in the same season
 final_reg_norm = final_reg_norm[~((final_reg_norm['season_type'] == 'RS') & final_reg_norm.duplicated(subset=['Player', 'season']))]
 
+final_reg_norm.to_csv("reg_norm_metric.csv", index = False)
+final_post_norm.to_csv("post_norm_metric.csv", index = False)
