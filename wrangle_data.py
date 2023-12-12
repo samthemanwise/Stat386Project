@@ -2,6 +2,22 @@ import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 
 def wrangle_data(csv1, csv2, csv3):
+    """
+    Brief description ...
+
+    Parameters
+    ----------
+
+    csv1 : path 
+        Descriptin here
+
+
+    Returns
+    -------
+    
+    
+    
+    """
 
     # read in data
     reg21_22 = pd.read_csv(csv1)
