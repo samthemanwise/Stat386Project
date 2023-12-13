@@ -1,28 +1,39 @@
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 
-def wrangle_data(csv1, csv2, csv3):
+def wrangle_data(reg_csv, post_csv, metric_csv):
     """
-    Brief description ...
+    Creates two dataframes, one for regular season data and one for post season data, of the player's season
+    that made the playoffs that season dating back to 2014. These dataframes are created to contain these variables that 
+    are calculated inside the module: player name, age, the season, the season type (RS or PO), RAPTOR metric total, 
+    WAR metric total, PREDATOR metric total, league experience in years, playoff experience in year, and a normalized 
+    performance score from sum of the three other metrics.
 
     Parameters
     ----------
 
-    csv1 : path 
-        Descriptin here
+    reg_csv : path 
+        Clean regular season data for the 2021-2022 CSV that was created in the clean_data module, "clean_reg21_22.csv"
+
+    post_csv : path 
+        Clean postseason data for the 2021-2022 CSV that was created in the clean_data module, "clean_playoff21_22.csv"
+
+    metric_csv : path 
+        Clean CSV that holds the data for metrics for all players, "modern_RAPTOR_by_team.csv"
 
 
     Returns
     -------
     
-    
+    Two CSV's, "reg_norm_metric.csv" and "post_norm_metric.csv", that both contain the variables,
+    [Player, Age, season, season_type, raptor_total, war_total, predator_total, years_league, years_playoff, performance_score]
     
     """
 
     # read in data
-    reg21_22 = pd.read_csv(csv1)
-    playoff21_22 = pd.read_csv(csv2)
-    raptor_df = pd.read_csv(csv3)
+    reg21_22 = pd.read_csv(reg_csv)
+    playoff21_22 = pd.read_csv(post_csv)
+    raptor_df = pd.read_csv(metric_csv)
 
     # Keep specfic columns in raptor
     columns_to_keep = ["player_name","season","season_type","team","poss","mp","raptor_offense","raptor_total",
