@@ -10,7 +10,7 @@ Link to Documentation: samthemanwise.github.io/Stat386Project
 
 2. Basketball Reference - NBA 2022 Playoffs Advanced Statistics. [Link](https://www.basketball-reference.com/playoffs/NBA_2022_advanced.html)
 
-3. FiveThirtyEight - Modern RAPTOR by Team (CSV). [Link](https://github.com/fivethirtyeight/data/blob/master/nba-raptor/modern_RAPTOR_by_team.csv)
+3. FiveThirtyEight - Modern RAPTOR by Team (CSV). [Link]
 https://github.com/fivethirtyeight/data/blob/master/nba-raptor/modern_RAPTOR_by_team.csv
 
 **References:**
