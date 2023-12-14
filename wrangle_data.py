@@ -3,10 +3,10 @@ from sklearn.preprocessing import MinMaxScaler
 
 def wrangle_data(reg_csv, post_csv, metric_csv):
     """
-    Creates two dataframes, one for regular season data and one for post season data, of the player's season
-    that made the playoffs that season dating back to 2014. These dataframes are created to contain these variables that 
+    Creates two data frames, one for regular season data and one for postseason data, of the player's season
+    that made the playoffs that season dating back to 2014. These data frames are created to contain these variables that 
     are calculated inside the module: player name, age, the season, the season type (RS or PO), RAPTOR metric total, 
-    WAR metric total, PREDATOR metric total, league experience in years, playoff experience in year, and a normalized 
+    WAR metric total, PREDATOR metric total, league experience in years, playoff experience in years, and a normalized 
     performance score from sum of the three other metrics.
 
     Parameters
