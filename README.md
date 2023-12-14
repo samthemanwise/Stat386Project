@@ -4,11 +4,13 @@ This is Sam Wise and Matthew Ng's Project on NBA Player Performance comparing re
 
 Link to Documentation: samthemanwise.github.io/Stat386Project
 
-Our raw data for regular player information (Team, age, etc) came from:
-https://www.basketball-reference.com/leagues/NBA_2022_advanced.html
-https://www.basketball-reference.com/playoffs/NBA_2022_advanced.html
+**Data Sources:**
 
-To get our player metrics (RAPTOR, PREDATOR, WAR) we pulled data that was already curated from:
+1. Basketball Reference - NBA 2022 Regular Season Advanced Statistics. [Link](https://www.basketball-reference.com/leagues/NBA_2022_advanced.html)
+
+2. Basketball Reference - NBA 2022 Playoffs Advanced Statistics. [Link](https://www.basketball-reference.com/playoffs/NBA_2022_advanced.html)
+
+3. FiveThirtyEight - Modern RAPTOR by Team (CSV). [Link](https://github.com/fivethirtyeight/data/blob/master/nba-raptor/modern_RAPTOR_by_team.csv)
 https://github.com/fivethirtyeight/data/blob/master/nba-raptor/modern_RAPTOR_by_team.csv
 
 **References:**
