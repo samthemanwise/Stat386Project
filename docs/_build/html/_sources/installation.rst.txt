@@ -3,16 +3,9 @@
 Installation
 ============
 
-Note: The installation setup is not yet complete. Follow the steps below when available.
+To install the package and project, you can use the following command:
 
-1. Clone the repository:
+.. code-block:: console
 
-   .. code-block:: bash
+    pip install git+https://github.com/samthemanwise/Stat386Project.git
 
-      git clone git@github.com:samthemanwise/Stat386Project.git
-
-2. Install the package:
-
-   .. code-block:: bash
-
-      pip install .

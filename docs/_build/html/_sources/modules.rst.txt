@@ -5,7 +5,5 @@ Stat386Project
    :maxdepth: 4
 
    clean_data
-   setup
-   sources
    wrangle_data
    regression
