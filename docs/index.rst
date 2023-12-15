@@ -11,7 +11,7 @@ Welcome to Matthew Ng and Sam Wise's NBA Player Performance Project Documentatio
    :maxdepth: 2
    :caption: Contents:
 
-   installation
+   README
    modules
 
 

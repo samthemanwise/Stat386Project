@@ -1,5 +1,5 @@
 Player Performance Package
-==============
+==========================
 
 .. toctree::
    :maxdepth: 4
