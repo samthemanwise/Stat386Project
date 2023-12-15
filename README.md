@@ -2,13 +2,15 @@
 
 This is Sam Wise and Matthew Ng's Project investigating NBA Player Performance comparing regular to postseason. We want to see if we can create a good performance metric that we can also use to predict postseason performance.
 
-This repository includes a requirements.txt and setup.py 
+This repository includes...
 
-It has all of the raw data files we used and the final curated datasets. 
+- requirements.txt and setup.py 
 
-It includes two .py files that our package modules were built on that scrape/clean data and wrangle data. 
+- All of the raw data files we used and the final curated datasets. 
 
-It also includes some .ipynb and .py files that were used to perform our regression, create demos, and a workspace to code in.
+- Two .py files that our package modules were built on that scrape/clean data and wrangle data. 
+
+- Some .ipynb and .py files that were used to perform our regression, create demos, and a workspace to code in.
 
 Link to Documentation: samthemanwise.github.io/Stat386Project
 
