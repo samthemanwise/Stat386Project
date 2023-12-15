@@ -77,28 +77,39 @@
 
 <div class="viewcode-block" id="wrangle_data">
 <a class="viewcode-back" href="../wrangle_data.html#wrangle_data.wrangle_data">[docs]</a>
-<span class="k">def</span> <span class="nf">wrangle_data</span><span class="p">(</span><span class="n">csv1</span><span class="p">,</span> <span class="n">csv2</span><span class="p">,</span> <span class="n">csv3</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">wrangle_data</span><span class="p">(</span><span class="n">reg_csv</span><span class="p">,</span> <span class="n">post_csv</span><span class="p">,</span> <span class="n">metric_csv</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Brief description ...</span>
+<span class="sd">    Creates two data frames, one for regular season data and one for postseason data, of the player&#39;s season</span>
+<span class="sd">    that made the playoffs that season dating back to 2014. These data frames are created to contain these variables that </span>
+<span class="sd">    are calculated inside the module: player name, age, the season, the season type (RS or PO), RAPTOR metric total, </span>
+<span class="sd">    WAR metric total, PREDATOR metric total, league experience in years, playoff experience in years, and a normalized </span>
+<span class="sd">    performance score from sum of the three other metrics.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
 
-<span class="sd">    csv1 : path </span>
-<span class="sd">        Descriptin here</span>
+<span class="sd">    reg_csv : path </span>
+<span class="sd">        Clean regular season data for the 2021-2022 CSV that was created in the clean_data module, &quot;clean_reg21_22.csv&quot;</span>
+
+<span class="sd">    post_csv : path </span>
+<span class="sd">        Clean postseason data for the 2021-2022 CSV that was created in the clean_data module, &quot;clean_playoff21_22.csv&quot;</span>
+
+<span class="sd">    metric_csv : path </span>
+<span class="sd">        Clean CSV that holds the data for metrics for all players, &quot;modern_RAPTOR_by_team.csv&quot;</span>
 
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
 <span class="sd">    </span>
-<span class="sd">    </span>
+<span class="sd">    Two CSV&#39;s, &quot;reg_norm_metric.csv&quot; and &quot;post_norm_metric.csv&quot;, that both contain the variables,</span>
+<span class="sd">    [Player, Age, season, season_type, raptor_total, war_total, predator_total, years_league, years_playoff, performance_score]</span>
 <span class="sd">    </span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="c1"># read in data</span>
-    <span class="n">reg21_22</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">csv1</span><span class="p">)</span>
-    <span class="n">playoff21_22</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">csv2</span><span class="p">)</span>
-    <span class="n">raptor_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">csv3</span><span class="p">)</span>
+    <span class="n">reg21_22</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">reg_csv</span><span class="p">)</span>
+    <span class="n">playoff21_22</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">post_csv</span><span class="p">)</span>
+    <span class="n">raptor_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">metric_csv</span><span class="p">)</span>
 
     <span class="c1"># Keep specfic columns in raptor</span>
     <span class="n">columns_to_keep</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;player_name&quot;</span><span class="p">,</span><span class="s2">&quot;season&quot;</span><span class="p">,</span><span class="s2">&quot;season_type&quot;</span><span class="p">,</span><span class="s2">&quot;team&quot;</span><span class="p">,</span><span class="s2">&quot;poss&quot;</span><span class="p">,</span><span class="s2">&quot;mp&quot;</span><span class="p">,</span><span class="s2">&quot;raptor_offense&quot;</span><span class="p">,</span><span class="s2">&quot;raptor_total&quot;</span><span class="p">,</span>

@@ -21,6 +21,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="regression module" href="regression.html" />
     <link rel="prev" title="sources module" href="sources.html" /> 
 </head>
 
@@ -54,6 +55,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#wrangle_data.wrangle_data"><code class="docutils literal notranslate"><span class="pre">wrangle_data()</span></code></a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="regression.html">regression module</a></li>
 </ul>
 </li>
 </ul>
@@ -87,11 +89,26 @@
 <span id="wrangle-data-module"></span><h1>wrangle_data module<a class="headerlink" href="#module-wrangle_data" title="Link to this heading"></a></h1>
 <dl class="py function">
 <dt class="sig sig-object py" id="wrangle_data.wrangle_data">
-<span class="sig-prename descclassname"><span class="pre">wrangle_data.</span></span><span class="sig-name descname"><span class="pre">wrangle_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">csv1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csv2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">csv3</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrangle_data.html#wrangle_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#wrangle_data.wrangle_data" title="Link to this definition"></a></dt>
-<dd><p>Brief description …</p>
+<span class="sig-prename descclassname"><span class="pre">wrangle_data.</span></span><span class="sig-name descname"><span class="pre">wrangle_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reg_csv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">post_csv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metric_csv</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/wrangle_data.html#wrangle_data"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#wrangle_data.wrangle_data" title="Link to this definition"></a></dt>
+<dd><p>Creates two data frames, one for regular season data and one for postseason data, of the player’s season
+that made the playoffs that season dating back to 2014. These data frames are created to contain these variables that
+are calculated inside the module: player name, age, the season, the season type (RS or PO), RAPTOR metric total,
+WAR metric total, PREDATOR metric total, league experience in years, playoff experience in years, and a normalized
+performance score from sum of the three other metrics.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>csv1</strong> (<em>path</em>) – Descriptin here</p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>reg_csv</strong> (<em>path</em>) – Clean regular season data for the 2021-2022 CSV that was created in the clean_data module, “clean_reg21_22.csv”</p></li>
+<li><p><strong>post_csv</strong> (<em>path</em>) – Clean postseason data for the 2021-2022 CSV that was created in the clean_data module, “clean_playoff21_22.csv”</p></li>
+<li><p><strong>metric_csv</strong> (<em>path</em>) – Clean CSV that holds the data for metrics for all players, “modern_RAPTOR_by_team.csv”</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><em>Two CSV’s, “reg_norm_metric.csv” and “post_norm_metric.csv”, that both contain the variables,</em></p></li>
+<li><p><em>[Player, Age, season, season_type, raptor_total, war_total, predator_total, years_league, years_playoff, performance_score]</em></p></li>
+</ul>
+</p>
 </dd>
 </dl>
 </dd></dl>
@@ -103,6 +120,7 @@
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="sources.html" class="btn btn-neutral float-left" title="sources module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="regression.html" class="btn btn-neutral float-right" title="regression module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

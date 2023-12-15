@@ -76,14 +76,35 @@
 
 <div class="viewcode-block" id="clean_data">
 <a class="viewcode-back" href="../clean_data.html#clean_data.clean_data">[docs]</a>
-<span class="k">def</span> <span class="nf">clean_data</span><span class="p">(</span><span class="n">csv1</span><span class="p">,</span> <span class="n">csv2</span><span class="p">):</span>
+<span class="k">def</span> <span class="nf">clean_data</span><span class="p">(</span><span class="n">reg_csv</span><span class="p">,</span> <span class="n">post_csv</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Cleans the two dataframes of the 2021-2022 data, both regular and postseason, that is taken from Basketball-Reference.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+
+<span class="sd">    reg_csv : path </span>
+<span class="sd">        Regular season data for the 2021-2022 NBA season from basketball reference, &quot;2021-2022reg.csv&quot;</span>
+
+<span class="sd">    post_csv : path </span>
+<span class="sd">        Postseason data for the 2021-2022 NBA season from basketball reference, &quot;2021-2022playoff.csv&quot;</span>
+
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    </span>
+<span class="sd">    Two clean CSV&#39;s, &quot;clean_reg21_22.csv&quot; and &quot;clean_playoff21_22.csv&quot;, that both contain the variables,</span>
+<span class="sd">    [Player,Pos,Age,Tm,G,MP,PER,TS%,3PAr,FTr,ORB%,DRB%,TRB%,AST%,</span>
+<span class="sd">    STL%,BLK%,TOV%,USG%,OWS,DWS,WS,WS/48,OBPM,DBPM,BPM,VORP]</span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="c1"># Load in 2022-2023 Regular Season Data</span>
     <span class="c1"># Link: https://www.basketball-reference.com/leagues/NBA_2022_advanced.html</span>
 
     <span class="c1"># Read the CSV file into a DataFrame</span>
 
-    <span class="n">reg21_22</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">csv1</span><span class="p">)</span>
+    <span class="n">reg21_22</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">reg_csv</span><span class="p">)</span>
 
     <span class="c1"># Clean Data</span>
 
@@ -98,7 +119,7 @@
 
     <span class="c1"># Read the CSV file into a DataFrame</span>
 
-    <span class="n">playoff21_22</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">csv2</span><span class="p">)</span>
+    <span class="n">playoff21_22</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">post_csv</span><span class="p">)</span>
 
     <span class="c1"># Clean Data</span>
 

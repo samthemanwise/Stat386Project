@@ -8,3 +8,4 @@ Stat386Project
    setup
    sources
    wrangle_data
+   regression
