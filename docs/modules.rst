@@ -1,4 +1,4 @@
-Stat386Project
+Player Performance Package
 ==============
 
 .. toctree::

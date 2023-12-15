@@ -12,7 +12,7 @@ import sys
 sys.path.insert(0, os.path.abspath('..'))
 
 
-project = 'Sphinx For Final Project'
+project = 'Regular to Postseason Player Performance Project'
 copyright = '2023, Matt Ng, Sam Wise'
 author = 'Matt Ng, Sam Wise'
 release = '0.0.1'
