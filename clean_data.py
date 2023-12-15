@@ -18,7 +18,8 @@ def clean_data(reg_csv, post_csv):
     -------
     
     Two clean CSV's, "clean_reg21_22.csv" and "clean_playoff21_22.csv", that both contain the variables,
-    [Player,Pos,Age,Tm,G,MP,PER,TS%,3PAr,FTr,ORB%,DRB%,TRB%,AST%,STL%,BLK%,TOV%,USG%,OWS,DWS,WS,WS/48,OBPM,DBPM,BPM,VORP]
+    [Player,Pos,Age,Tm,G,MP,PER,TS%,3PAr,FTr,ORB%,DRB%,
+    TRB%,AST%,STL%,BLK%,TOV%,USG%,OWS,DWS,WS,WS/48,OBPM,DBPM,BPM,VORP]
     
     """
 
