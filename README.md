@@ -12,13 +12,13 @@ This repository includes...
 
 - Some .ipynb and .py files that were used to perform our regression, create demos, and a workspace to code in.
 
-Link to Documentation: samthemanwise.github.io/Stat386Project
+Link to Documentation: samthemanwise.github.io/stat386_nba_package
 
 **Installation:**
 
 To install the package and project, you can use the following command:
 
-pip install git+https://github.com/samthemanwise/Stat386Project.git
+pip install git+https://github.com/samthemanwise/stat386_nba_package.git
 
 **Data Sources:**
 
