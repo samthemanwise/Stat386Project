@@ -16,7 +16,7 @@ Link to Documentation: samthemanwise.github.io/stat386_nba_package
 
 **Installation:**
 
-To install the package and project, you can use the following command:
+To install the package and project, you can use the following commands:
 
 git clone https://github.com/samthemanwise/stat386_nba_package.git
 
