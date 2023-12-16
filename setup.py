@@ -15,5 +15,5 @@ setup(
     'seaborn',
     'scipy',
     'statsmodels',
-]
+    ]
 ) 
