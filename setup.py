@@ -8,12 +8,12 @@ setup(
     author_email='samthemanwise@gmail.com', 
     packages=['stat386_nba_package'], 
     install_requires=[ 
-        'numpy', 
-        'pandas',
-        'scikit-learn',
-        'matplotlib',
-        'seaborn',
-        'stats',
-        'statsmodels.api'
-    ], 
+    'numpy', 
+    'pandas',
+    'scikit-learn',
+    'matplotlib',
+    'seaborn',
+    'scipy',
+    'statsmodels',
+]
 ) 
