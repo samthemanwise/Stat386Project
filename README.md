@@ -20,6 +20,8 @@ To install the package and project, you can use the following command:
 
 git clone https://github.com/samthemanwise/stat386_nba_package.git
 
+pip install -e
+
 **Data Sources:**
 
 1. Basketball Reference - NBA 2022 Regular Season Advanced Statistics. [Link](https://www.basketball-reference.com/leagues/NBA_2022_advanced.html)
