@@ -12,7 +12,7 @@ This repository includes...
 
 - Some .ipynb and .py files that were used to perform our regression, create demos, and a workspace to code in.
 
-Link to Documentation: samthemanwise.github.io/stat386_nba_package
+Link to Documentation: https://samthemanwise.github.io/stat386_nba_package
 
 **Installation:**
 
