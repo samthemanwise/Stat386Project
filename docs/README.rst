@@ -8,14 +8,16 @@ Our project and package reads in and cleans regular and postseason NBA data. It 
 Documentation
 =============
 
-For documentation, visit https://samthemanwise.github.io/Stat386Project/
+For documentation, visit https://samthemanwise.github.io/stat386_nba_package/
 
 Installation
 ============
 
-To install the package and project, you can use the following command:
+To install the package and project, you can use the following commands:
 
 .. code-block:: console
 
-    pip install git+https://github.com/samthemanwise/Stat386Project.git
+    git clone https://github.com/samthemanwise/stat386_nba_package.git
+
+    pip install -e
 
