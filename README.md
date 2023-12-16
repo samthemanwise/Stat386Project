@@ -18,7 +18,7 @@ Link to Documentation: samthemanwise.github.io/stat386_nba_package
 
 To install the package and project, you can use the following command:
 
-pip install git+https://github.com/samthemanwise/stat386_nba_package.git
+git clone https://github.com/samthemanwise/stat386_nba_package.git
 
 **Data Sources:**
 
