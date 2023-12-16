@@ -14,6 +14,12 @@ This repository includes...
 
 Link to Documentation: samthemanwise.github.io/Stat386Project
 
+**Installation:**
+
+To install the package and project, you can use the following command:
+
+pip install git+https://github.com/samthemanwise/Stat386Project.git
+
 **Data Sources:**
 
 1. Basketball Reference - NBA 2022 Regular Season Advanced Statistics. [Link](https://www.basketball-reference.com/leagues/NBA_2022_advanced.html)
